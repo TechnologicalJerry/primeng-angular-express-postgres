@@ -46,5 +46,5 @@ export const generateToken = (payload: JwtPayload): string => {
     throw new Error('JWT_SECRET is not configured');
   }
 
-  return jwt.sign(payload, secret, { expiresIn });
+  return jwt.sign(payload, secret, { expiresIn: expiresIn as jwt.SignOptions['expiresIn'] });
 };
