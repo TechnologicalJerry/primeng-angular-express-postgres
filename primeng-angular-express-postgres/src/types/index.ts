@@ -1,11 +1,11 @@
 export interface User {
-  id: number;
+  id?: number;
   email: string;
   password: string;
   firstName: string;
   lastName: string;
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 export interface UserInput {
